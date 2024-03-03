@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WildHunt - The Game of a Lifetime</title>
+    <link rel="stylesheet" href="assets/vendors/animate.css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/loader.js"></script>
+</head>
+
+<body>
+    <div class="hiro-loader"></div>
+    <header class="hiro-header home-header" id="top">
+        <nav>
+            <div class="container">
+                <div class="hiro-nav">
+                    <a href="index.html" class="nav-brand">
+                        <img src="assets/images/logo@2x.png" alt="Hiro" class="logo">
+                        <img src="assets/images/logo_white@2x.png" alt="Hiro" class="logo-white">
+                    </a>
+                    <button class="hiro-nav-popup-toggle">
+                        <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Hiro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="hiro-agency" transform="translate(-964.000000, -37.000000)" fill="#FFFFFF">
+                                    <g id="Menu" transform="translate(964.000000, 37.000000)">
+                                        <g id="menu">
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="7.50795322" width="19.9609942" height="2.4951462" style="fill:black; stroke-width:1;stroke:white;"></rect>
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="14.9964327" width="19.9609942" height="2.4951462" style="fill:black; stroke-width:1;stroke:white;"></rect>
+                                            <rect id="Rectangle" fill-rule="nonzero" x="-8.05281767e-14" y="0.0194736842" width="19.9609942" height="2.4951462" style="fill:black; stroke-width:1;stroke:white;"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="container wow fadeInUp">
+            <div id="hiroHeaderCarousel" class="hiro-header-carousel carousel slide" data-ride="carousel" data-interval="3500">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h1 class="carousel-item-title" data-animation="animated fadeInRight"><span>WildHunt 6.0</span></h1>
+                                <p class="carousel-item-description" data-animation="animated fadeInRight">WildHunt 6.0 is quickly approaching, if you are interested and like the look of our game, please let us know and join our <a href='https://chat.whatsapp.com/IksLgDOddRb9cbOfoAtKZh'>Whatsapp Group</a>.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="assets/images/avatar.jpg" alt="Remarkable Digital Products" class="img-fluid w-100 rounded" width="372px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hiro-nav-popup-modal">
+        <div class="hiro-nav-popup-modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 menu-wrapper" style="padding-top:100px;">
+                        <ul class="nav hiro-main-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#about" class="nav-link">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#hall-of-fame" class="nav-link">Hall of Fame</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="shop.html" class="nav-link" style="color:#dc3545">Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 blog-posts text-white" style="padding-top:100px;">
+                        <h2 class="popup-blog-headng">Next <br> WildHunt</h2>
+                        <h5>23 March 2024</h5>
+                        <p id="demo"></p>
+                        <div class="countdown-timer">
+                            <script>
+                                // Set the date we're counting down to
+                                var countDownDate = new Date("Mar 23, 2024 09:00:00").getTime();
+                                
+                                // Update the count down every 1 second
+                                var x = setInterval(function() {
+                                
+                                  // Get today's date and time
+                                  var now = new Date().getTime();
+                                    
+                                  // Find the distance between now and the count down date
+                                  var distance = countDownDate - now;
+                                    
+                                  // Time calculations for days, hours, minutes and seconds
+                                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                    
+                                  // Output the result in an element with id="demo"
+                                  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                                  + minutes + "m " + seconds + "s ";
+                                    
+                                  // If the count down is over, write some text 
+                                  if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("demo").innerHTML = "EXPIRED";
+                                  }
+                                }, 1000);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="bg-primary hiro-section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center wow fadeInUp">
+                    <h2 class="section-title mb-3">Digital Product Design</h2>
+                    <p class="section-text-ct">We take products through every stage necessary for their creation – Product Discovery, Business and User Research, UX/UI Design, Prototyping, Usability Testing, and future Product Improvements.</p>
+                </div>
+                <div class="col-md-6 wow fadeInUp">
+                    <img src="assets/images/img_3.png" class="w-100 mb-5" alt="Digital Product Design">
+                    <p class="section-text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team-section hiro-section" id="hall-of-fame">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 wow fadeInUp">
+                    <h2 class="section-title">5.0 <br> Hall of Fame</h2>
+                    <p class="section-text-light">Here are the winners of the most recent WildHunt, 5.0.</p>
+                    <div>
+                        <a class="carousel-control-prev" href="#hiroTeamCarousel" role="button" data-slide="prev">
+                            <img src="assets/images/arrow_left.png" alt="left arrow" width="20px">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#hiroTeamCarousel" role="button" data-slide="next">
+                            <img src="assets/images/Arrow_right.png" alt="right arrow" width="20px">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 wow fadeInRight">
+                    <div id="hiroTeamCarousel" class="hiro-team-carousel carousel slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="team-card" data-animation="animated flipInY">
+                                            <img src="assets/images/img_5.png" alt="Paulina Gayoso" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Paulina Gayoso</h6>
+                                                <p class="team-member-title">Project Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/img_4.png" alt="Edwards" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Edwards</h6>
+                                                <p class="team-member-title">CTO, Co-Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="team-card" data-animation="animated flipInY">
+                                            <img src="assets/images/img_5.png" alt="Paulina Gayoso" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Paulina Gayoso</h6>
+                                                <p class="team-meber-title">Project Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="team-card featured" data-animation="animated flipInY">
+                                            <img src="assets/images/img_4.png" alt="Edwards" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Edwards</h6>
+                                                <p class="team-meber-title">CTO, Co-Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="team-card" data-animation="animated flipInY">
+                                            <img src="assets/images/img_5.png" alt="Paulina Gayoso" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Paulina Gayoso</h6>
+                                                <p class="team-meber-title">Project Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6" data-animation="animated flipInY">
+                                        <div class="team-card featured">
+                                            <img src="assets/images/img_4.png" alt="Edwards" class="team-member-thumbnail">
+                                            <div class="team-member-details">
+                                                <h6 class="team-member-name">Edwards</h6>
+                                                <p class="team-meber-title">CTO, Co-Founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="career-section hiro-section bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="section-title wow fadeInLeft">
+                        Career <br> Work with us
+                    </h2>
+                </div>
+                <div class="col-md-6 wow fadeInRight">
+                    <p class="section-text-ct mb-5">Our work transforms how customers experience your business – creating distinction, shifting perceptions and driving growth.</p>
+                    <button class="hiro-btn-outline">VIEW MORE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="hiro-footer wow fadeInUp">
+        <div class="container d-flex flex-wrap justify-content-lg-between align-items-center">
+            <p class="mb-0 footer-text">©wildhunt.uk 2024. All rights reserved.</p>
+            <nav class="footer-nav nav">
+                <a href="#!" class="nav-link">Terms and Conditions</a>
+                <a href="#!" class="nav-link">Privacy Policy</a>
+                <a href="#!" class="nav-link">Cookie Policy</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="assets/vendors/wowjs/wow.min.js"></script>
+    <script src="assets/vendors/popper.js/popper.min.js"></script>
+    <script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
