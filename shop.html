@@ -43,73 +43,165 @@
             </div>
         </nav>
         <div class="container wow fadeInUp">
-            <div id="hiroHeaderCarousel" class="hiro-header-carousel carousel slide" data-ride="carousel" data-interval="3500">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="carousel-item-title" data-animation="animated fadeInRight"><span>WildHunt 6.0</span></h1>
-                                <p class="carousel-item-description" data-animation="animated fadeInRight">Order of Events: <br>11:00 - Arrive at the bandstand <br>11:30 - Hiders released <br>11:35 - Hunters released <br>12:15 - Send instant location message - Random outer zone closure <br>13:00 - Send instant location message - Random outer zone closure <br>13:45 - Send instant location message - Random outer zone closure <br> 14:30 - Send instant location message - Random outer zone closure <br>15:00 - Send instant location message <br>15:30 - Red zone closure <br>16:00 - Game end</p>
-                            </div>
-                            <div class="col-md-6">
-                                <img src="assets/images/avatar.jpg" alt="WildHunt" class="img-fluid w-100 rounded" width="372px" style="padding-top: 20%;">
-				<script>
-   				 // Function to change the image source
-   				 function changeImage() {
-   				   var now = new Date();
-   				   var targetDateTime1 = new Date(); // Set the target date and time
-				      targetDateTime.setFullYear(2024); // Set the target year
-				      targetDateTime.setMonth(3); // Set the target month (0-indexed, so 2 is March)
-				      targetDateTime.setDate(23); // Set the target date
-				      targetDateTime.setHours(12); // Set the target hour (in 24-hour format)
-				      targetDateTime.setMinutes(15); // Set the target minute
-				   var targetDateTime2 = new Date(); // Set the target date and time
-				      targetDateTime.setFullYear(2024); // Set the target year
-				      targetDateTime.setMonth(3); // Set the target month (0-indexed, so 2 is March)
-				      targetDateTime.setDate(23); // Set the target date
-				      targetDateTime.setHours(13); // Set the target hour (in 24-hour format)
-				      targetDateTime.setMinutes(00); // Set the target minute
-				   var targetDateTime3 = new Date(); // Set the target date and time
-				      targetDateTime.setFullYear(2024); // Set the target year
-				      targetDateTime.setMonth(3); // Set the target month (0-indexed, so 2 is March)
-				      targetDateTime.setDate(23); // Set the target date
-				      targetDateTime.setHours(13); // Set the target hour (in 24-hour format)
-				      targetDateTime.setMinutes(45); // Set the target minute
-			 	   var targetDateTime4 = new Date(); // Set the target date and time
-				      targetDateTime.setFullYear(2024); // Set the target year
-				      targetDateTime.setMonth(3); // Set the target month (0-indexed, so 2 is March)
-				      targetDateTime.setDate(23); // Set the target date
-				      targetDateTime.setHours(14); // Set the target hour (in 24-hour format)
-				      targetDateTime.setMinutes(30); // Set the target minute
-				   var targetDateTime5 = new Date(); // Set the target date and time
-				      targetDateTime.setFullYear(2024); // Set the target year
-				      targetDateTime.setMonth(3); // Set the target month (0-indexed, so 2 is March)
-				      targetDateTime.setDate(23); // Set the target date
-				      targetDateTime.setHours(15); // Set the target hour (in 24-hour format)
-				      targetDateTime.setMinutes(30); // Set the target minute
-
-    				  // If the current time is equal to or past the target time
- 				     if (targetDateTime2 > now >= targetDateTime1) {
-				        document.getElementById('changingImage').src = 'assets/images/pinkzone.jpg'; // Change the image source
-				     if (targetDateTime3 > now >= targetDateTime2) {
-				        document.getElementById('changingImage').src = 'assets/images/bluezone.jpg'; // Change the image source
-				     if (targetDateTime4 > now >= targetDateTime3) {
-				        document.getElementById('changingImage').src = 'assets/images/yellowzone.jpg'; // Change the image source
-				     if (targetDateTime5 > now >= targetDateTime4) {
-				        document.getElementById('changingImage').src = 'assets/images/greenzone.jpg'; // Change the image source
-				     if (now >= targetDateTime5) {
-				        document.getElementById('changingImage').src = 'assets/images/redzone.jpg'; // Change the image source
-				      }
-				    }
-
- 				   // Call the function when the page loads
- 				   window.onload = changeImage;
-				</script>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id='collection-component-1710957129793'></div>
+<script type="text/javascript">
+/<![CDATA[/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: '502ce8-57.myshopify.com',
+      storefrontAccessToken: '43977718cc08254b9821271a46b96faf',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('collection', {
+        id: '619211489614',
+        node: document.getElementById('collection-component-1710957129793'),
+        moneyFormat: '%C2%A3%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px",
+          "width": "calc(25% - 20px)"
+        },
+        "img": {
+          "height": "calc(100% - 15px)",
+          "position": "absolute",
+          "left": "0",
+          "right": "0",
+          "top": "0"
+        },
+        "imgWrapper": {
+          "padding-top": "calc(75% + 15px)",
+          "position": "relative",
+          "height": "0"
+        }
+      },
+      "button": {
+        "color": "#fdf2f2",
+        ":hover": {
+          "color": "#fdf2f2",
+          "background-color": "#ba0e0e"
+        },
+        "background-color": "#cf0f0f",
+        ":focus": {
+          "background-color": "#ba0e0e"
+        }
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "color": "#fdf2f2",
+        ":hover": {
+          "color": "#fdf2f2",
+          "background-color": "#ba0e0e"
+        },
+        "background-color": "#cf0f0f",
+        ":focus": {
+          "background-color": "#ba0e0e"
+        }
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "color": "#fdf2f2",
+        ":hover": {
+          "color": "#fdf2f2",
+          "background-color": "#ba0e0e"
+        },
+        "background-color": "#cf0f0f",
+        ":focus": {
+          "background-color": "#ba0e0e"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#cf0f0f",
+        ":hover": {
+          "background-color": "#ba0e0e"
+        },
+        ":focus": {
+          "background-color": "#ba0e0e"
+        }
+      },
+      "count": {
+        "color": "#fdf2f2",
+        ":hover": {
+          "color": "#fdf2f2"
+        }
+      },
+      "iconPath": {
+        "fill": "#fdf2f2"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/]]>/
+</script>
         </div>
     </header>
     <div class="hiro-nav-popup-modal">
