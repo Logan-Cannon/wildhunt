@@ -252,6 +252,32 @@
     <h2>9. Governing Law</h2>
     <p>These Terms shall be governed by and construed in accordance with the laws of the United Kingdom, without regard to its conflict of law principles.</p>
 	</div>
+<div id="cookiePopup" class="popup">
+	<h1>Cookie Policy</h1>
+    <p>Last Updated: [Date]</p>
+
+    <p>WildHunt.uk ("we", "our", "us") uses cookies on the website <a href="https://wildhunt.uk">wildhunt.uk</a> (the "Site"). By using the Site, you consent to the use of cookies.</p>
+
+    <h2>1. What are Cookies?</h2>
+    <p>Cookies are small pieces of text sent by your web browser by a website you visit. A cookie file is stored in your web browser and allows the Site or a third-party to recognize you and make your next visit easier and the Site more useful to you.</p>
+
+    <h2>2. How We Use Cookies</h2>
+    <p>When you use and access the Site, we may place a number of cookies files in your web browser. We use cookies for the following purposes:</p>
+    <ul>
+        <li><strong>Essential Cookies:</strong> These cookies are necessary for the Site to function properly and to provide you with the services you have requested, such as accessing secure areas of the website.</li>
+        <li><strong>Analytics Cookies:</strong> These cookies allow us to track and analyze how users interact with the Site, to improve the performance of our website and provide a better user experience.</li>
+        <li><strong>Advertising Cookies:</strong> These cookies are used to deliver advertisements relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns.</li>
+    </ul>
+
+    <h2>3. Third-Party Cookies</h2>
+    <p>In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the Site, deliver advertisements on and through the Site, and so on. These cookies may be set by the third parties themselves.</p>
+
+    <h2>4. Control of Cookies</h2>
+    <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed. If you do this, however, you may have to manually adjust some preferences every time you visit a site and some services and functionalities may not work.</p>
+
+    <h2>5. Changes to This Cookie Policy</h2>
+    <p>We may update our Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie Policy on this page.</p>
+</div>
 	<div id="overlay" class="overlay"></div>
     <footer class="hiro-footer wow fadeInUp">
         <div class="container d-flex flex-wrap justify-content-lg-between align-items-center">
@@ -259,7 +285,7 @@
             <nav class="footer-nav nav">
                 <a href="#" id="termsLink" class="nav-link">Terms and Conditions</a>
                 <a href="#" id="privacyLink" class="nav-link">Privacy Policy</a>
-                <a href="#!" class="nav-link">Cookie Policy</a>
+                <a href="#" id="cookieLink" class="nav-link">Cookie Policy</a>
             </nav>
         </div>
     </footer>
@@ -302,6 +328,24 @@
     // Close the pop-up and overlay when clicking outside the pop-up
     document.getElementById('overlay').addEventListener('click', function() {
         document.getElementById('termsPopup').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    });
+});
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // JavaScript to show and hide the pop-up and overlay
+    document.getElementById('cookieLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        document.getElementById('cookiePopup').style.display = 'block'; // Show the pop-up
+        document.getElementById('overlay').style.display = 'block'; // Show the overlay
+        document.body.style.overflow = 'hidden'; // Disable scrolling on the background
+    });
+
+    // Close the pop-up and overlay when clicking outside the pop-up
+    document.getElementById('overlay').addEventListener('click', function() {
+        document.getElementById('cookiePopup').style.display = 'none';
         document.getElementById('overlay').style.display = 'none';
         document.body.style.overflow = 'auto'; // Restore scrolling
     });
